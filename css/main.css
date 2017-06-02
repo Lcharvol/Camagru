@@ -1,0 +1,670 @@
+body {
+		margin:0;
+   		position:relative;
+   		font-size:50px;
+   		height:100%;
+   		overflow-x: hidden;
+   		background-color:rgb(35,35,35);
+   		color:rgb(242,186,82);
+   		min-width:700px;
+		font-family: 'Lato', sans-serif;
+		letter-spacing: 2px;
+		height: 100%;
+    }
+
+    #loginregister
+    {
+    	position:relative;
+    	width:100%;
+    	top:20px;
+    	height:60%;
+    	overflow-x: hidden;
+    }
+    #loginform
+    {
+    	position:relative;
+    	width:100%;
+    	left:0%;
+    	top:20px;
+    	text-align:center;
+    	display: inline-block;
+    	transition-duration: 1s;
+    	
+    }
+    #loginform form input
+    {
+    	position:relative;
+    	width:60%;
+    	min-width:60%;
+    	min-height:70px;
+    	text-align:center;
+    	transition-duration: 1s;
+    	font-size:30px;
+    	outline: none;
+    	border-radius: 5px;
+  	 	-moz-box-shadow: 10px 10px 50px 0px #000000;
+		-webkit-box-shadow: 10px 10px 50px 0px #000000;
+		-o-box-shadow: 10px 10px 50px 0px #000000;
+		box-shadow: 10px 10px 50px 0px #000000;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=50);
+
+    }
+    #resetpassword
+    {
+    	position:relative;
+    	width:100%;
+    	top:20px;
+    	overflow-x: hidden;
+    }
+    #resetpassword
+    {
+    	position:absolute;
+    	width:100%;
+    	left:-100%;
+    	text-align:center;
+    	display: inline-block;
+    	transition-duration: 1s;
+    }
+    #resetpassword form input
+    {
+    	position:relative;
+    	width:60%;
+    	min-width:60%;
+    	min-height:70px;
+    	text-align:center;
+    	transition-duration: 1s;
+    	font-size:30px;
+    	outline: none;
+    	border-radius: 5px;
+    	-moz-box-shadow: 10px 10px 50px 0px #000000;
+		-webkit-box-shadow: 10px 10px 50px 0px #000000;
+		-o-box-shadow: 10px 10px 50px 0px #000000;
+		box-shadow: 10px 10px 50px 0px #000000;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=50);
+
+    }
+    #registerform
+    {
+    	position:absolute;
+    	width:100%;
+    	left:100%;
+    	top:0;
+    	text-align:center;
+    	display: inline-block;
+    	transition-duration: 1s;
+    	
+    }
+    #registerform form input
+    {
+    	position:relative;
+    	width:60%;
+    	min-width:60%;
+    	min-height:70px;
+    	text-align:center;
+    	transition-duration: 1s;
+    	font-size:30px;
+    	outline: none;
+    	border-radius: 5px;
+    	-moz-box-shadow: 10px 10px 50px 0px #000000;
+		-webkit-box-shadow: 10px 10px 50px 0px #000000;
+		-o-box-shadow: 10px 10px 50px 0px #000000;
+		box-shadow: 10px 10px 50px 0px #000000;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=50);
+
+    }
+    #imgheader
+    {
+    	position:relative;
+    	width:100%;
+    	text-align:center;
+    	background: linear-gradient(to right, #1db0dc, #23d0d3);
+    	-moz-box-shadow: 10px 10px 50px 0px #000000;
+		-webkit-box-shadow: 10px 10px 50px 0px #000000;
+		-o-box-shadow: 10px 10px 50px 0px #000000;
+		box-shadow: 10px 10px 50px 0px #000000;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=50);
+    }
+ 
+	#footer
+	{
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:30px;
+		background-color:rgb(242,186,82);
+	}
+	.error{
+		color:D91E41;
+	}
+	p
+	{
+		font-size:17px;
+		color:rgb(242,186,82);
+	}
+	#main{
+		position:relative;
+		width:100%;
+		margin:auto;
+	}
+	#mainindex
+	{
+		background-color:rgb(35,35,35);
+	}
+	#savebutton
+	{
+		display: block;
+		position:relative;
+		width:100%;
+		height:100px;
+		border:0;
+		background-color:rgb(242,186,82);
+	}
+	#startbutton
+	{
+		display: block;
+		position:relative;
+		width:100%;
+		height:100px;
+		border:0;
+		background-color:rgb(242,186,82);
+	}
+	#buttontop
+	{
+		position:relative;
+		width:100%;
+	}
+	#logoutbutton
+	{
+		position:relative;
+		display:inline-block;
+		z-index:100;
+		width:200px;
+		height:100px;
+		margin:none;
+		top:0;
+		text-align: center;
+	}
+	#logoutbutton p
+	{
+		margin-top:24px;
+		font-size:40px;
+	}
+	#gallerybutton
+	{
+		position:relative
+		display:inline-block;
+		z-index:100;
+		width:200px;
+		height:100px;
+		left:0;
+		top:0;
+		margin:none;
+		text-align: center;
+	}
+	#gallerybutton p{
+		margin-top:24px;
+		font-size:40px;
+	}
+	#startbutton
+	{
+		font-size:30px;	
+	}
+	#savebutton
+	{
+		font-size:30px;	
+	}
+	#register-form input
+	{
+		position:relative;
+		display: block;
+		margin:auto;
+		margin-top:45px;
+		margin-bottom:0px;
+	}
+	#login-form
+	{
+		position:relative;
+	}
+	#login-form input
+	{
+		position:relative;
+		display: block;
+		margin:auto;
+		margin-top:45px;
+		margin-bottom:0px;
+	}
+	#reset-form input
+	{
+		position:relative;
+		display: block;
+		margin:auto;
+		margin-top:45px;
+		margin-bottom:0px;
+	}
+	#submit
+	{
+	padding: 10px 25px;
+	border-width: 2px;
+	/* les dégradés en question */
+	border:none;
+	background: linear-gradient(to right, #1db0dc, #23d0d3);
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+	/* On prévoit une transition pour l'effet au survol */
+	transition: all 0.3s ease 0s;
+	filter: hue-rotate(0deg) saturate(1);
+	}
+	.imputzone
+	{
+		border:none;
+	}
+	.link p
+	{
+		position:relative;
+		margin-top:30px;
+	}
+	.link:hover p
+	{
+		cursor: pointer;
+		opacity: 0.8;
+		transition-duration: 0.5s;
+	}
+	#logo{
+		position:relative;
+		width:80%;
+		margin:auto;
+	}
+	#loupe
+	{
+		position:relative;
+		float:left;
+		height:60%;
+		margin-top:25px;
+		margin-left:25px;
+	}
+	#loupe:hover
+	{
+		cursor:pointer;
+	}
+	input[type=search] {
+    width: 80%;
+    height:100px;
+    margin-top:10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border:none;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('../imgs/loupe.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 30px 30px;
+    font-size:1em;
+    color:#23d0d3;
+    font-family: 'Lato', sans-serif;
+    padding: 12px 20px 12px 120px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	}
+	input[type=search]:focus {
+    outline: none;
+	}
+	#center-loader
+	{
+		position:relative;
+		width:20px;
+		height:20px;
+		border-radius: 100px;
+		transform-origin: 50% 100%;
+		margin:auto;
+		margin-top:40px;
+		background: linear-gradient(to right, #1db0dc, #23d0d3);
+	}
+	.loader {
+   position:relative;
+   width:100%;
+   height:200px;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    z-index: 3000;
+}
+.loader-login {
+   position:relative;
+   margin-top:50px;
+   width:100%;
+   height:200px;
+    overflow: hidden;
+    right: 0;
+    top: 0;
+    z-index: 3000;
+}
+
+.loader-inner {
+ position:relative;
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+		spin 5000ms linear infinite
+	;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 10px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap:nth-child(1) { animation-delay: 0ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: #1db0dc;
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+
+@keyframes spin {
+    
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media only screen and (max-device-width: 1000px) {
+    body {
+   		position:relative;
+   		height:100%;
+   		overflow-x: hidden;
+   		/*background-color: rgb(43,39,5);*/
+   		background-color:rgb(35,35,35);
+   		color:rgb(242,186,82);
+		font-family: 'Lato', sans-serif;
+		letter-spacing: 10px;
+    }
+
+    #loginregister
+    {
+    	position:relative;
+    	width:100%;
+    	top:20px;
+    	overflow-x: hidden;
+    }
+    
+    #loginform
+    {
+    	position:relative;
+    	width:100%;
+    	left:0%;
+    	top:20px;
+    	text-align:center;
+    	display: inline-block;
+    	transition-duration: 1s;
+    	height:100%;
+    	
+    }
+    
+    #loginform form input
+    {
+    	position:relative;
+    	width:90%;
+    	min-width:90%;
+    	min-height:100px;
+    	text-align:center;
+    	transition-duration: 1s;
+    	font-size:30px;
+    	outline: none;
+    }
+    
+    #resetpassword
+    {
+    	position:relative;
+    	width:100%;
+    	top:20px;
+    	overflow-x: hidden;
+    }
+    
+    #resetpassword
+    {
+    	position:absolute;
+    	width:100%;
+    	left:-100%;
+    	text-align:center;
+    	display: inline-block;
+    	transition-duration: 1s;
+    }
+    
+    #resetpassword form input
+    {
+    	position:relative;
+    	width:90%;
+    	min-width:90%;
+    	min-height:100px;
+    	text-align:center;
+    	transition-duration: 1s;
+    	font-size:30px;
+    	outline: none;
+    }
+    
+    #registerform
+    {
+    	position:absolute;
+    	width:100%;
+    	left:100%;
+    	top:0;
+    	text-align:center;
+    	display: inline-block;
+    	transition-duration: 1s;
+    	
+    }
+    
+    #registerform form input
+    {
+    	position:relative;
+    	width:90%;
+    	min-width:90%;
+    	min-height:100px;
+    	text-align:center;
+    	transition-duration: 1s;
+    	font-size:30px;
+    	outline: none;
+    }
+    
+    #imgheader
+    {
+    	position:relative;
+    	width:100%;
+    	text-align:center;
+    	background: linear-gradient(to bottom, #1db0dc, #23d0d3);
+    	-moz-box-shadow: 10px 10px 50px 0px #000000;
+		-webkit-box-shadow: 10px 10px 50px 0px #000000;
+		-o-box-shadow: 10px 10px 50px 0px #000000;
+		box-shadow: 10px 10px 50px 0px #000000;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=134, Strength=50);
+    }
+ 
+	#footer
+	{
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:30px;
+		background-color:rgb(242,186,82);
+	}
+	
+	.error{
+		color:D91E41;
+	}
+	
+	p
+	{
+		font-size:17px;
+		color:rgb(242,186,82);
+	}
+	
+	#main{
+		position:relative;
+		width:100%;
+		margin:auto;
+	}
+	
+	#savebutton
+	{
+		display: block;
+		position:relative;
+		width:100%;
+		height:100px;
+		border:0;
+		background-color:rgb(242,186,82);
+	}
+	
+	#startbutton
+	{
+		display: block;
+		position:relative;
+		width:100%;
+		height:100px;
+		border:0;
+		background-color:rgb(242,186,82);
+	}
+	
+	#buttontop
+	{
+		position:relative;
+		width:100%;
+	}
+	
+	#logoutbutton
+	{
+		position:relative;
+		display:inline-block;
+		z-index:100;
+		width:200px;
+		height:100px;
+		margin:none;
+		top:0;
+		text-align: center;
+	}
+	
+	#logoutbutton p
+	{
+		margin-top:24px;
+		font-size:40px;
+	}
+	
+	#gallerybutton
+	{
+		position:relative
+		display:inline-block;
+		z-index:100;
+		width:200px;
+		height:100px;
+		left:0;
+		top:0;
+		margin:none;
+		text-align: center;
+	}
+	
+	#gallerybutton p{
+		margin-top:24px;
+		font-size:40px;
+	}
+	
+	#startbutton
+	{
+		font-size:30px;	
+	}
+	
+	#savebutton
+	{
+		font-size:30px;	
+	}
+	
+	#register-form input
+	{
+		position:relative;
+		display: block;
+		margin:auto;
+		margin-top:110px;
+		margin-bottom:0px;
+	}
+	
+	#login-form input
+	{
+		position:relative;
+		display: block;
+		margin:auto;
+		margin-top:100px;
+		margin-bottom:0px;
+	}
+	
+	#reset-form input
+	{
+		position:relative;
+		display: block;
+		margin:auto;
+		margin-top:100px;
+		margin-bottom:0px;
+	}
+	
+	#submit
+	{
+		padding: 10px 25px;
+		border-width: 2px;
+		/* les dégradés en question */
+		border:none;
+		background: linear-gradient(to right, #1db0dc, #23d0d3);
+		color: #fff;
+		cursor: pointer;
+		text-decoration: none;
+		font-size: 3em;
+		font-weight: bold;
+		/* On prévoit une transition pour l'effet au survol */
+		transition: all 0.3s ease 0s;
+		filter: hue-rotate(0deg) saturate(1);
+	}
+	
+	.imputzone
+	{
+		border:none;
+	}
+	
+	.link p
+	{
+		position:relative;
+		margin-top:100px;
+		font-size:0.7em;
+	}
+	
+	#logo
+	{
+		position:relative;
+		width:100%;
+		margin:auto;
+	}
+}
