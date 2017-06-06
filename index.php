@@ -89,9 +89,6 @@ include('html_part/side.php');
 				window.onload=function()
 				{
 					var canvas = document.getElementById('canvas');
-					canvas.style.position = 'relative';
-					canvas.style.visibility = 'visible';
-					canvas.style.display = 'inline-block';
 					img = document.getElementById('hidden_img');
 					canvas.width = img.width;
 					canvas.height = img.height;

@@ -25,11 +25,12 @@ $email = $_POST['email'];
             {
                $_SESSION['errorreg'] = "mail send";
                header('Location: login.php');
-           }
+            }
         }
         else
         {
-            echo "c'est pas bon";
+          $_SESSION['errorlog'] = "Email incorect!";
+          header('Location: login.php');
         }
 
     }

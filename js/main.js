@@ -84,7 +84,10 @@ function  show_upload()
 function      get_filtre()
 {
   var filtre = document.getElementsByClassName('filtres_visu2');
-  return(filtre[0].id);
+  if (filtre != null)
+    return(filtre[0].id);
+  else
+    return("");
 }
 
 function      add_to_mini_gallery(img)
@@ -110,6 +113,8 @@ function      save_photo()
     filtre = 'masque';
   else if (type_filtre == 'filter_chat')
     filtre = 'chat';
+  else
+    filtre = "";
   xhr.open('POST', 'save_snap.php', true);
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
   xhr.send('img=' + image + '&filtre=' + filtre);
