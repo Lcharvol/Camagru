@@ -132,8 +132,20 @@ function    where()
     }
 }
 
+function escapeHtml(text) {
+  return text
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+}
+
 function    aff_fake_comm(comment)
 {
+    if (comment == "")
+        return;
+    comment = escapeHtml(comment);
     var comments = document.getElementById('existent-comment');
     var date = new Date().toLocaleString();
     if (document.getElementById('no_comm'))

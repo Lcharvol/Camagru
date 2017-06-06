@@ -13,7 +13,7 @@ $email = $_POST['email'];
            $message = 'Pour changer votre mot de passe, veuillez cliquer
            sur le lien ci dessous
            ou copier/coller dans votre navigateur internet.
-           http://localhost:8080/Camagru_last/reset.php?email='.urlencode($email).'
+           http://localhost:8080/reset.php?email='.urlencode($email).'
            ---------------
            Ceci est un mail automatique, Merci de ne pas y répondre.';
            if (!mail($email, $sujet, $message, $entete))

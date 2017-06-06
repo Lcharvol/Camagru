@@ -79,5 +79,7 @@ $file = $upload_dir."img_gallery/".$name;
 add_image_to_table($name, 1, "png", $_SESSION['login']);
 $success = file_put_contents($file, $data);
 add_filter($filtre, $name);
+if (file_exists ("tmp_img/img_tmp.png"))
+    unlink ("tmp_img/img_tmp.png");
 echo $file;
 ?>

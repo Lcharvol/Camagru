@@ -27,7 +27,7 @@ if($_POST)
                 $message = 'Bienvenue sur Camagru !
                 Pour activer votre compte, veuillez cliquer sur le lien ci dessous
                 ou copier/coller dans votre navigateur internet.
-                http://localhost:8080/Camagru_last/validation.php?login='.urlencode($user_name).'&cle='.urlencode($cle).'
+                http://localhost:8080/validation.php?login='.urlencode($user_name).'&cle='.urlencode($cle).'
                 ---------------
                 Ceci est un mail automatique, Merci de ne pas y répondre.';
                 if (!mail($to, $sujet, $message, $entete))

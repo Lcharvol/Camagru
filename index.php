@@ -10,11 +10,12 @@ if ($_SESSION['login'] == "")
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="icon" type="image/ico" href="favicon.ico" />
 	<script type="text/javascript" src="js/upload_image.js"></script>
-	<LINK REL="SHORTCUT ICON" href="imgs/logo.ico">
 </head>
 <body>
-<?php include('html_part/side.php') ;
+<?php
+include('html_part/side.php');
 ?>
 <div id="all">
 	<div id="minigallery">
@@ -26,13 +27,13 @@ if ($_SESSION['login'] == "")
 	     </form>
 	</div>
 	<div id="aff_minigallery">
-		<img onclick="show_upload()"src="imgs/Download-logo.png" id="download_logo"></img>
+		<img onclick="show_upload()" src="imgs/Download-logo.png" id="download_logo"></img>
 		<p>Upload a file</p>
 		<p id = "errorContainer3" class="error">
 		     <?php
 		      	echo $_SESSION['error'];
 		     ?>
-	     </p>
+	    </p>
 	</div>
 	<div id="mainindex" >
 		<div id="mainindex-inner">
@@ -71,18 +72,42 @@ if ($_SESSION['login'] == "")
 					</div>
 				</a>
 			</div>
+			<?php
+				if (file_exists("tmp_img/img_tmp.png"))
+					echo "<img id=\"hidden_img\" src=\"tmp_img/img_tmp.png\"></img>";
+			?>
 		</div>
 	</div>
 </div>
-<?php
-if ($_SESSION['upload'] == "ok")
-{
-	echo "<script>transfert()</script>";
-	$_SESSION['upload'] = "ko";
-}
-?>
 <script type="text/javascript" src="js/camera.js"></script>
 <script type="text/javascript" src="js/smooth_ancre.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<?php
+	if (file_exists("tmp_img/img_tmp.png"))
+	{
+		echo " <script type=\"text/javascript\">
+				window.onload=function()
+				{
+					var canvas = document.getElementById('canvas');
+					canvas.style.position = 'relative';
+					canvas.style.visibility = 'visible';
+					canvas.style.display = 'inline-block';
+					img = document.getElementById('hidden_img');
+					canvas.width = img.width;
+					canvas.height = img.height;
+					canvas.getContext('2d').drawImage(img, 0, 0);
+					var appercu = document.getElementById('photo');
+					appercu.style.position = 'relative';
+					appercu.style.visibility = 'visible';
+					appercu.style.display = 'inline-block';
+				}
+				</script>";
+	};
+	if ($_SESSION['upload'] == "ok")
+	{
+		echo "<script>transfert()</script>";
+		$_SESSION['upload'] = "ko";
+	};
+?>
 </body>
 </html>

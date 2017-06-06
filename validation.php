@@ -1,6 +1,8 @@
 <?php
 require_once 'config/setup.php';
 session_start ();
+if ($_GET['login'] == "" || $_GET['cle'] == "")
+	header('Location: index.php');
 $login = $_GET['login'];
 $cle = $_GET['cle'];
 

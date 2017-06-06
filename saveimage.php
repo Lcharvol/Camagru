@@ -42,7 +42,7 @@ function    transfert()
     ini_set('post_max_size', '10M');
     $name = $_FILES['fic']['name'];
     $dossier = 'tmp_img/';
-    $extensions = array('.png', '.jpg','.JPG', '.jpeg');
+    $extensions = array('.png','.PNG', '.jpg','.JPG', '.jpeg');
     $extension = strrchr($name, '.');
     if(!in_array($extension, $extensions))
         $_SESSION['error'] = "Vous devez uploader un fichier de type png, gif, jpg, jpeg, txt ou doc...";
@@ -50,11 +50,12 @@ function    transfert()
          $_SESSION['error'] = "Nom de l'image incorect";
     else
     {
-        $name = verifname($name);
+        $name = "img_tmp.png";
         $fichier = basename($name);
         if(move_uploaded_file($_FILES['fic']['tmp_name'], $dossier . $fichier))
-        {
-            // add_image_to_table($name, "10000", $extension, $_SESSION['login']);
+        { 
+           // add_image_to_table($name, "10000", $extension, $_SESSION['login']);
+        $_SESSION['error'] = 'Image uploadé!';
         }
         else
             $_SESSION['error'] = 'Echec de l\'upload !';

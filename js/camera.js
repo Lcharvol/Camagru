@@ -29,6 +29,7 @@ function snapshot()
 	var appercu = document.getElementById('photo');
 	appercu.style.position = 'relative';
 	appercu.style.visibility = 'visible';
+	appercu.style.display = 'inline-block';
 }
 function save()
 {
@@ -48,30 +49,6 @@ function noStream()
 
 }
 
-function stop()
-{
-	var myButton = document.getElementById('buttonStop');
-	if (myButton) myButton.disabled = true;
-	myButton = document.getElementById('buttonSnap');
-	if (myButton) myButton.disabled = true;
-	if (videoStream)
-	{
-		if (videoStream.stop) videoStream.stop();
-		else if (videoStream.msStop) videoStream.msStop();
-		videoStream.onended = null;
-		videoStream = null;
-	}
-	if (video)
-	{
-		video.onerror = null;
-		video.pause();
-		if (video.mozSrcObject)
-			video.mozSrcObject = null;
-		video.src = "";
-	}
-	myButton = document.getElementById('buttonStart');
-	if (myButton) myButton.disabled = false;
-}
 
 function gotStream(stream)
 {

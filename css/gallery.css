@@ -26,6 +26,52 @@
  -o-transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
  transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
 }
+@media screen and (min-width: 1800px) {
+  .imggallery
+  {
+   position:relative;
+   display:inline-block;
+   width:20%;
+   height:280px;
+   overflow:hidden;
+   background-color:rgb(35,35,35);
+   transition-duration:0.3s;
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-size:130%;
+   background-position: center;
+   -webkit-transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
+   -moz-transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
+   -o-transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
+   transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .imggallery
+  {
+   position:relative;
+   display:inline-block;
+   width:25%;
+   height:280px;
+   overflow:hidden;
+   background-color:rgb(35,35,35);
+   transition-duration:0.3s;
+   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   background-size:130%;
+   background-position: center;
+   -webkit-transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
+   -moz-transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
+   -o-transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
+   transition: height 1s ease-in-out,width 1s ease-in-out,background-size .4s ease-in-out;
+  }
+}
 @media screen and (max-width: 1470px) {
   .imggallery
   {
